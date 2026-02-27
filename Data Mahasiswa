@@ -1,0 +1,21 @@
+class mahasiswa:
+    def __init__(self,nama,nim,tanggal_lahir,alamat):
+        self.nama = nama
+        self.nim = nim
+        self.tanggal_lahir = tanggal_lahir
+        self.alamat = alamat
+
+    def tampilkanNama(self):
+        print("Nama Mahasiswa:", self.nama)
+    def tampilkanNim(self):
+        print("Nim Mahasiswa:", self.nim)
+    def tampilkanTanggalLahir(self):
+        print("Tanggal Lahir Mahasiswa:", self.tanggal_lahir)
+    def tampilkanAlamat(self):
+        print("Alamat Mahasiswa:", self.alamat)
+
+mahasiswa1 = mahasiswa("Muhammad Rasya Ardian Pratama","250306043","18-05-2007","Gomong Lama")
+mahasiswa1.tampilkanNama()
+mahasiswa1.tampilkanNim()
+mahasiswa1.tampilkanTanggalLahir()
+mahasiswa1.tampilkanAlamat()
