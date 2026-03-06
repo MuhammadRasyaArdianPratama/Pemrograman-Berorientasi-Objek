@@ -1,0 +1,15 @@
+class hewan:
+    def __init__(self, nama, jenis):
+        self.nama = nama
+        self.jenis = jenis
+    
+    def tampilkanNama(self):
+        print("Nama hewan ", self.nama)
+
+kuda = hewan("mambo", "hitam")
+harimau = hewan("malaya", "oren")
+kucing = hewan("comeo", "oren")
+print(kuda.nama)
+print(harimau.nama)
+print(kucing.nama)
+kuda.tampilkanNama()
