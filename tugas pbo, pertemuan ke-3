@@ -1,0 +1,32 @@
+class mahasiswa:
+    def __init__(self,nama,tanggal_lahir,nim,alamat):
+        self.nama = nama
+        self.tanggal_lahir = tanggal_lahir
+        self.nim = nim
+        self.alamat = alamat
+
+    def tampilkanNama(self):
+        print("Nama Mahasiswa:", self.nama)
+    def tampilkanTanggalLahir(self):
+        print("Tanggal Lahir mahasiswa:", self.tanggal_lahir)
+    def tampilkanNim(self):
+        print("Nim Mahasiswa:", self.nim)
+    def tampilkanAlamat(self):
+        print("Alamat Mahasiswa:", self.alamat)
+
+list_mhs = []
+jumlah_mhs = int(input("Masukkan jumlah Mahasiswa: "))
+
+for i in range(jumlah_mhs):
+    nama = input("Masukkan NAMA: ")
+    tanggal_lahir = input("Masukkan Tanggal Lahir: ")
+    nim = input("Masukkan NIM: ")
+    alamat = input("Masukkan ALAMAT: ")
+    mahasiswa1 = mahasiswa(nama,tanggal_lahir,nim,alamat)
+    list_mhs.append(mahasiswa1)
+
+for mhs in list_mhs:
+    mhs.tampilkanNama()
+    mhs.tampilkanTanggalLahir()
+    mhs.tampilkanNim()
+    mhs.tampilkanAlamat()
